@@ -13,6 +13,7 @@ export interface SettingsSnapshot {
   autoHideSidebar: boolean
   doubleTapToToggleHeader: boolean
   translateComments: boolean
+  keepControlsVisible: boolean
   translationTargetLanguage: string | null
   hideToolbarWhenScrolled: boolean
   headerPosition: 'top' | 'bottom'
