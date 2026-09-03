@@ -567,6 +567,29 @@ const cssContent = css`
 
 export const getCoreCss = () => {
   const isDesktop = Boolean(window.electron)
+  // Thêm đoạn CSS ép hiện thanh điều khiển nếu được bật từ settings
+  const settings = window.NouTube?.getSettings?.() // Hoặc cơ chế lấy settings hiện tại của app
+  let controlCss = ''
+  
+  // Viết trực tiếp đoạn CSS ép hiện
+  controlCss = `
+    ytm-custom-control {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+    }
+    .player-controls-bottom, 
+    .ytm-custom-control-bottom,
+    ytm-time-bar {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: flex !important;
+    }
+    .player-controls-middle {
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+  `
   return (
     cssContent +
     (window.NouTubeI ? cssContentMobile : '') +
