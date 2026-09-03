@@ -170,3 +170,10 @@ function installDoubleTapGestures() {
     { passive: false, capture: true },
   )
 }
+// Tự động ép Play nếu video bị khựng do cơ chế Adblock/Sponsorblock
+setInterval(() => {
+    const vid = document.querySelector('video');
+    if (vid && vid.paused && vid.readyState > 2) {
+        vid.play().catch(() => {});
+    }
+}, 800);
