@@ -1,4 +1,4 @@
-app-id: jp.nonbili.noutube-dev
+app-id: jp.thanhlouis.noutube-dev
 runtime: org.freedesktop.Platform
 runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
@@ -37,11 +37,11 @@ modules:
 
       # Prepare dev metadata with correct app-id
       - |
-        sed 's/jp.nonbili.noutube/jp.nonbili.noutube-dev/g' metadata/flatpak/jp.nonbili.noutube.metainfo.xml > jp.nonbili.noutube-dev.metainfo.xml
-        sed 's/Icon=jp.nonbili.noutube/Icon=jp.nonbili.noutube-dev/g' metadata/flatpak/jp.nonbili.noutube.desktop > jp.nonbili.noutube-dev.desktop
-        install -Dm644 jp.nonbili.noutube-dev.metainfo.xml /app/share/metainfo/jp.nonbili.noutube-dev.metainfo.xml
-        install -Dm644 jp.nonbili.noutube-dev.desktop /app/share/applications/jp.nonbili.noutube-dev.desktop
-        install -Dm644 desktop/icon.png /app/share/icons/hicolor/512x512/apps/jp.nonbili.noutube-dev.png
+        sed 's/jp.thanhlouis.noutube/jp.thanhlouis.noutube-dev/g' metadata/flatpak/jp.thanhlouis.noutube.metainfo.xml > jp.thanhlouis.noutube-dev.metainfo.xml
+        sed 's/Icon=jp.thanhlouis.noutube/Icon=jp.thanhlouis.noutube-dev/g' metadata/flatpak/jp.thanhlouis.noutube.desktop > jp.thanhlouis.noutube-dev.desktop
+        install -Dm644 jp.thanhlouis.noutube-dev.metainfo.xml /app/share/metainfo/jp.thanhlouis.noutube-dev.metainfo.xml
+        install -Dm644 jp.thanhlouis.noutube-dev.desktop /app/share/applications/jp.thanhlouis.noutube-dev.desktop
+        install -Dm644 desktop/icon.png /app/share/icons/hicolor/512x512/apps/jp.thanhlouis.noutube-dev.png
 
     sources:
       - type: dir
