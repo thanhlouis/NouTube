@@ -26,7 +26,7 @@ module.exports = ({ config }: { config: ExpoConfig }) => {
     newArchEnabled: true,
     ios: {
       supportsTablet: true,
-      bundleIdentifier: 'jp.nonbili.noutube',
+      bundleIdentifier: 'jp.thanhlouis.noutube',
     },
     android: {
       versionCode,
@@ -37,7 +37,7 @@ module.exports = ({ config }: { config: ExpoConfig }) => {
         backgroundColor: '#ffffff',
       },
       predictiveBackGestureEnabled: false,
-      package: 'jp.nonbili.noutube',
+      package: 'jp.thanhlouis.noutube',
       intentFilters,
     },
     web: {
