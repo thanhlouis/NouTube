@@ -198,6 +198,7 @@ export const settings$ = observable<Store>({
   autoHideSidebar: false,
   doubleTapToToggleHeader: false,
   translateComments: false,
+  keepControlsVisible: false,
   translationTargetLanguage: null,
   hideToolbarWhenScrolled: false,
   headerPosition: 'top',
