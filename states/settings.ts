@@ -139,6 +139,7 @@ export const getSettingsSnapshot = (value: Partial<Store> | undefined = settings
   language: normalizeI18nLanguage(value?.language),
   home: value?.home === 'yt-music' ? 'yt-music' : 'yt',
 
+  keepControlsVisible: Boolean(value?.keepControlsVisible),
   autoHideHeader: Boolean(value?.autoHideHeader),
   autoHideSidebar: Boolean(value?.autoHideSidebar),
   doubleTapToToggleHeader: Boolean(value?.doubleTapToToggleHeader),
